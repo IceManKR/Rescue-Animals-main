@@ -1,0 +1,27 @@
+@use '../base';
+
+.search {
+  background-color: base.$clr-accent-focus;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: base.$radius;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  
+  select {
+    height: 27px;
+  }
+  input {
+    height: 27px;
+    padding: 0 5px;
+    border-radius: 20px;
+  }
+}
+
+
+

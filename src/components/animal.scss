@@ -1,0 +1,53 @@
+@use '../_base.scss';
+
+.grid-container{
+    padding: 5vh 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    .card{
+        position: relative;
+        height: 50%;
+        margin: 15px;
+        background-color: white;
+        text-align: center;
+        box-shadow: base.$shadow;
+        button{
+            padding: 10px;
+            margin: 10px;
+            background-color: #576F72;
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(106, 179, 63);
+                font-size: medium;
+                margin-bottom: 6px;
+            }
+        }
+
+        
+    }
+ 
+
+}
+
+img{
+    height: 200px;
+    width: 15rem;
+    object-fit: cover;
+}
+.booked {
+    display: box;
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    &.bookedtrue{
+        background-color: red;
+    }
+    &.bookedfalse{
+        background-color: green;
+    }
+}

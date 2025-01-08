@@ -1,0 +1,41 @@
+@use '../_base.scss';
+
+
+@mixin review-box {
+    font-weight: 400;
+    background-color: #7D9D9C;
+    margin: 2rem 5rem 4rem 5rem;
+    padding: 2.5rem;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.info-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E4DCCF;
+}
+
+.info-adopt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10vw;
+  
+}    
+.title-review{
+        margin: 5vw;
+        text-align: center
+}
+
+.reviews {
+    @include review-box;
+}
+
+.title-review {
+    font-weight: 700;
+    font-size: 22px;
+}
+
